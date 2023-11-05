@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Breeze Concept</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Home Page start here -->
+    <section class="header">
+        <nav>
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="course.html">
+                            COURSE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            BLOG
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>
+                World's Biggest University
+            </h1>
+            <p>
+                Making website is now one of the easiest thing in the world. You just need to learn HTML, <br> CSS, Javascript and you are good to go.
+            </p>
+            <a href="" class="hero-btn">
+                Visit Us To Know More
+            </a>
+        </div>
+    </section>
+    <!-- Home Page ends here -->
+
+    <!-- Course Page starts here -->
+    <section class="course">
+        <h1>
+            Courses We Offer
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod veritatis perferendis alias temporibus laudantium inventore ad quas asperiores ratione placeat quo facilis, quibusdam, debitis illo, earum quam tempore quos! Eveniet.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>
+                    Intermediate
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id libero ab labore illo minus dolores adipisci nulla delectus, laborum magni facilis ad tempore aliquid reprehenderit quisquam velit nemo asperiores mollitia.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>
+                    Degree
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id libero ab labore illo minus dolores adipisci nulla delectus, laborum magni facilis ad tempore aliquid reprehenderit quisquam velit nemo asperiores mollitia.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>
+                    Post Graduation
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id libero ab labore illo minus dolores adipisci nulla delectus, laborum magni facilis ad tempore aliquid reprehenderit quisquam velit nemo asperiores mollitia.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Course Page ends here -->
+
+    <!-- Script for menu toggle -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
